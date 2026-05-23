@@ -1,0 +1,28 @@
+{
+  "name": "smart-wallet-indexer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index-smart-wallets.mjs",
+  "scripts": {
+  "start": "node index-smart-wallets.mjs",
+  "collect": "node collect-token-universe.mjs",
+  "market": "node collect-market-tokens.mjs",
+  "actors": "node index-smart-actors.mjs",
+  "audit:actors": "node audit-smart-actors.mjs",
+  "profit:actors": "node enrich-actor-profit.mjs",
+  "export:final": "node export-final-smart-money-list.mjs",
+  "monitor": "node monitor-watchlist.mjs",
+  "monitor:loop": "node monitor-loop.mjs",
+  "profile": "node profile-wallets.mjs",
+  "enrich": "node enrich-token-performance.mjs",
+  "score": "node score-smart-whales.mjs",
+  "audit": "node audit-smart-whales.mjs",
+  "monitor:whales": "node monitor-smart-whales.mjs",
+  "monitor:whales:loop": "node monitor-smart-whales-loop.mjs"
+},
+  "dependencies": {
+    "axios": "^1.13.2",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^17.2.3"
+  }
+}
